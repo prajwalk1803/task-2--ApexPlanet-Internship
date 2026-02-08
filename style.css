@@ -1,0 +1,278 @@
+/* ================================
+   ApexAuth Premium UI Styles
+   ================================ */
+
+:root{
+  --brand-1:#00c2ff;
+  --brand-2:#5b5bff;
+  --brand-3:#00ffa8;
+  --dark:#0b1220;
+  --dark-2:#111a2e;
+  --light:#ffffff;
+  --muted:#6c757d;
+  --card-bg: rgba(255,255,255,0.08);
+  --border: rgba(255,255,255,0.12);
+  --shadow: 0 20px 50px rgba(0,0,0,0.35);
+  --radius: 22px;
+}
+
+*{
+  font-family: 'Poppins', sans-serif;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  background: radial-gradient(circle at 20% 20%, rgba(0, 194, 255, 0.25), transparent 40%),
+              radial-gradient(circle at 80% 20%, rgba(91, 91, 255, 0.22), transparent 40%),
+              radial-gradient(circle at 50% 80%, rgba(0, 255, 168, 0.18), transparent 50%),
+              linear-gradient(180deg, #070b14, #0b1220);
+  color: #fff;
+  overflow-x:hidden;
+}
+
+.text-light-50{
+  color: rgba(255,255,255,0.75) !important;
+}
+
+.section-pad{
+  padding: 80px 0;
+}
+
+.gradient-text{
+  background: linear-gradient(90deg, var(--brand-1), var(--brand-3), var(--brand-2));
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+}
+
+.glass-nav{
+  background: rgba(10, 16, 30, 0.7);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+.brand-logo{
+  width: 40px;
+  height: 40px;
+  border-radius: 14px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background: linear-gradient(135deg, var(--brand-1), var(--brand-2));
+  box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+}
+
+.hero-section{
+  padding-top: 70px;
+}
+
+.premium-badge{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding: 10px 16px;
+  border-radius: 999px;
+  background: rgba(255,255,255,0.10);
+  border: 1px solid rgba(255,255,255,0.12);
+  color: rgba(255,255,255,0.9);
+  font-size: 0.9rem;
+}
+
+.hero-card{
+  border-radius: var(--radius);
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+  overflow:hidden;
+}
+
+.hero-card-top{
+  padding: 12px 16px;
+  display:flex;
+  gap:8px;
+  background: rgba(0,0,0,0.15);
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+.dot{
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  opacity: 0.9;
+}
+
+.hero-card-body{
+  padding: 22px;
+}
+
+.hero-stats .stat-card{
+  min-width: 120px;
+  padding: 14px 16px;
+  border-radius: 18px;
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.12);
+  transition: transform .25s ease;
+}
+
+.hero-stats .stat-card:hover{
+  transform: translateY(-6px);
+}
+
+.stat-num{
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+
+.stat-label{
+  font-size: 0.85rem;
+  color: rgba(255,255,255,0.7);
+}
+
+.feature-card{
+  padding: 22px;
+  border-radius: var(--radius);
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.10);
+  box-shadow: 0 18px 40px rgba(0,0,0,0.25);
+  transition: transform .25s ease, border .25s ease;
+  height: 100%;
+}
+
+.feature-card:hover{
+  transform: translateY(-10px);
+  border-color: rgba(0, 194, 255, 0.35);
+}
+
+.feature-card .icon{
+  width: 54px;
+  height: 54px;
+  border-radius: 18px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background: linear-gradient(135deg, rgba(0,194,255,0.85), rgba(91,91,255,0.85));
+  margin-bottom: 14px;
+  font-size: 1.4rem;
+}
+
+.auth-section{
+  background: linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.01));
+}
+
+.auth-card{
+  border-radius: var(--radius);
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.12);
+  box-shadow: var(--shadow);
+  padding: 26px;
+}
+
+.auth-tabs .nav-link{
+  font-weight: 600;
+  color: rgba(255,255,255,0.75);
+  background: rgba(255,255,255,0.06);
+}
+
+.auth-tabs .nav-link.active{
+  background: linear-gradient(90deg, var(--brand-1), var(--brand-2));
+  color: white;
+}
+
+.form-control, .form-select{
+  border-radius: 14px !important;
+  border: 1px solid rgba(0,0,0,0.15);
+}
+
+.input-group-text{
+  border-radius: 14px 0 0 14px !important;
+}
+
+.btn-eye{
+  border-radius: 0 14px 14px 0 !important;
+}
+
+.invalid-msg{
+  font-size: 0.85rem;
+  margin-top: 4px;
+  color: #ffb4b4;
+}
+
+.password-meter{
+  width: 100%;
+  height: 10px;
+  border-radius: 999px;
+  background: rgba(0,0,0,0.2);
+  overflow:hidden;
+}
+
+.meter-bar{
+  height: 100%;
+  width: 0%;
+  border-radius: 999px;
+  transition: width .3s ease;
+  background: linear-gradient(90deg, #ff5b5b, #ffdd57, #00ffa8);
+}
+
+.preview-box{
+  border-radius: 18px;
+  padding: 20px;
+  background: rgba(0,0,0,0.05);
+  border: 1px dashed rgba(0,0,0,0.15);
+}
+
+.preview-title{
+  font-weight: 700;
+}
+
+.custom-accordion .accordion-item{
+  border-radius: 18px !important;
+  overflow:hidden;
+  border: none;
+  margin-bottom: 14px;
+}
+
+.custom-accordion .accordion-button{
+  font-weight: 600;
+}
+
+.footer{
+  border-top: 1px solid rgba(255,255,255,0.08);
+  background: rgba(0,0,0,0.15);
+}
+
+.footer-link{
+  color: rgba(255,255,255,0.7);
+  text-decoration:none;
+  margin-left: 14px;
+  font-size: 0.95rem;
+}
+
+.footer-link:hover{
+  color: white;
+}
+
+.btn-primary{
+  background: linear-gradient(90deg, var(--brand-1), var(--brand-2));
+  border: none;
+  box-shadow: 0 14px 35px rgba(0,0,0,0.25);
+}
+
+.btn-primary:hover{
+  transform: translateY(-1px);
+}
+
+.btn-dark{
+  background: linear-gradient(90deg, #1b1b1b, #0b0b0b);
+  border: none;
+}
+
+@media(max-width: 576px){
+  .section-pad{
+    padding: 60px 0;
+  }
+  .auth-card{
+    padding: 18px;
+  }
+}
